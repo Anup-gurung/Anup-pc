@@ -7,7 +7,7 @@ import { ThemeToggle } from '@/components/theme-toggle'
 
 // --- Helpers ---
 
-const TextReveal = ({ children, className = "" }: { children: React.ReactNode, className?: string }) => {
+const div = ({ children, className = "" }: { children: React.ReactNode, className?: string }) => {
   return (
     <div className={`overflow-hidden ${className}`}>
       <motion.div
@@ -82,9 +82,9 @@ const Hero = () => {
         </motion.h1>
       </div>
       <div className="mt-12 flex flex-col items-center gap-6 max-w-2xl px-6">
-        <TextReveal className="text-lg md:text-2xl font-mono text-center tracking-tighter">
+        <div className="text-lg md:text-2xl font-mono text-center tracking-tighter">
           FULL-STACK DEVELOPER | TECHNOPRENEUR | CREATIVE TECHNOLOGIST
-        </TextReveal>
+        </div>
         <p className="text-center font-sans opacity-60 text-sm md:text-base leading-relaxed">
           Building scalable digital products, blending technology, design, and real-world impact.
         </p>
@@ -113,17 +113,17 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-current pt-20">
           <div className="space-y-4">
-            <TextReveal className="text-3xl font-display font-black">PRECISION</TextReveal>
+            <div className="text-3xl font-display font-black">PRECISION</div>
             <p className="font-mono text-sm opacity-60 uppercase">Technical Excellence</p>
             <p>Led cross-functional teams to design and deploy scalable platforms, improving operational efficiency by up to 50%.</p>
           </div>
           <div className="space-y-4">
-            <TextReveal className="text-3xl font-display font-black">STRATEGY</TextReveal>
+            <div className="text-3xl font-display font-black">STRATEGY</div>
             <p className="font-mono text-sm opacity-60 uppercase">Creative Problem Solving</p>
             <p>Designed optimized databases and scalable APIs, improving query performance by 25% in high-traffic environments.</p>
           </div>
           <div className="space-y-4">
-            <TextReveal className="text-3xl font-display font-black">IMPACT</TextReveal>
+            <div className="text-3xl font-display font-black">IMPACT</div>
             <p className="font-mono text-sm opacity-60 uppercase">Real-World Results</p>
             <p>Developed responsive applications focused on accessibility, improving user engagement by 30–40%.</p>
           </div>
@@ -184,9 +184,9 @@ const Experience = () => {
 
 const Projects = () => {
   const projects = [
-    { id: "01", title: "NAMZOED", tags: "Full-Stack • Super App", desc: "Bhutan&apos;s first multi-service ecosystem. Led 5+ devs, built with Next.js & Node.js.", caseStudyLink: "/case-studies/namzoed", figmaLink: "https://figma.com/design/namzoed" },
-    { id: "02", title: "MARPA&apos;S", tags: "Mobile • Education", desc: "App for kids & differently-abled users. Improved usability by 40%.", caseStudyLink: "/case-studies/marpas", figmaLink: "https://figma.com/design/marpas" },
-    { id: "03", title: "TIMELESS", tags: "Web • Tourism", desc: "Tourism platform connecting travelers/agents. Integrated booking APIs.", caseStudyLink: "/case-studies/timeless", figmaLink: "https://figma.com/design/timeless-travels" },
+    { id: "01", title: "NAMZOED", tags: "Full-Stack • Super App", desc: "Bhutan&apos;s first multi-service ecosystem. Led 5+ devs, built with Next.js & Node.js.", caseStudyLink: "/case-studies/namzoed", figmaLink: "https://www.figma.com/design/SAjwoQsVgSvM9ymWjgLY0R/NamZoed-App?node-id=364-2899&t=RyulZE2CFgoDT70f-0" },
+    { id: "02", title: "MARPA&apos;S", tags: "Mobile • Education", desc: "App for kids & differently-abled users. Improved usability by 40%.", caseStudyLink: "/case-studies/marpas", figmaLink: "https://www.figma.com/design/6kzaijdHYkbFbF2J0YYjqa/Marpa-s-Montessori?node-id=13-12&p=f&t=9SGE4VJhhBaiztl4-0" },
+    { id: "03", title: "TIMELESS", tags: "Web • Tourism", desc: "Tourism platform connecting travelers/agents. Integrated booking APIs.", caseStudyLink: "/case-studies/timeless", figmaLink: "https://www.figma.com/design/fNMjDKGC2PSgrpK7rR3uCX/TBT-Website?node-id=0-1&p=f&t=J56Dj5QlcV8ckL2V-0" },
   ]
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
@@ -310,7 +310,7 @@ const SkillsAndEducation = () => {
         
         <div className="space-y-24">
           <div>
-            <TextReveal className="text-2xl font-mono mb-12 uppercase tracking-widest italic italic">EDUCATION</TextReveal>
+            <div className="text-2xl font-mono mb-12 uppercase tracking-widest italic italic">EDUCATION</div>
             <div className="space-y-8">
               <div>
                 <h4 className="font-display font-black text-3xl uppercase leading-tight">Bachelor of Computer Science</h4>

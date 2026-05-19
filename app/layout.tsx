@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Archivo_Black, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
-import RootLayoutClient from './layout-client';
+import RootLayoutClient from './layout-client.js';
 
 const inter = Inter({
   subsets: ['latin'],

@@ -5,7 +5,7 @@ import { motion } from 'motion/react'
 import CustomCursor from '@/components/cursor'
 import { ThemeToggle } from '@/components/theme-toggle'
 
-const TextReveal = ({ children, className = "" }: { children: React.ReactNode, className?: string }) => {
+const div = ({ children, className = "" }: { children: React.ReactNode, className?: string }) => {
   return (
     <div className={`overflow-hidden ${className}`}>
       <motion.div
@@ -43,9 +43,9 @@ export default function MarpasMontessoriCaseStudy() {
       {/* Hero Section */}
       <section className="pt-40 pb-20 px-6 md:px-20 relative">
         <div className="max-w-7xl mx-auto">
-          <TextReveal className="text-7xl md:text-9xl font-display font-black uppercase leading-tight mb-8">
+          <div className="text-7xl md:text-9xl font-display font-black uppercase leading-tight mb-8">
             Marpa's Montessori
-          </TextReveal>
+          </div>
           <p className="text-xl md:text-2xl font-sans opacity-70 max-w-3xl mb-12 leading-relaxed">
             A modern educational platform designed to create a seamless connection between parents, teachers, and students while supporting engaging early childhood learning experiences through intuitive UI/UX design.
           </p>
@@ -73,9 +73,9 @@ export default function MarpasMontessoriCaseStudy() {
       {/* Overview */}
       <section className="py-40 px-6 md:px-20">
         <div className="max-w-7xl mx-auto">
-          <TextReveal className="text-5xl md:text-8xl font-display font-black uppercase mb-12">
+          <div className="text-5xl md:text-8xl font-display font-black uppercase mb-12">
             Overview
-          </TextReveal>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
             <div className="space-y-6">
               <p className="text-lg md:text-xl font-sans leading-relaxed">
@@ -100,11 +100,11 @@ export default function MarpasMontessoriCaseStudy() {
       </section>
 
       {/* The Problem */}
-      <section className="py-40 px-6 md:px-20 bg-black/5 dark:bg-white/5">
+      <section className="py-40 px-6 md:px-20 bg-black dark:bg-black">
         <div className="max-w-7xl mx-auto">
-          <TextReveal className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
+          <div className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
             The Problem
-          </TextReveal>
+          </div>
           <p className="text-2xl md:text-3xl font-sans mb-12 max-w-3xl leading-relaxed">
             Many school platforms are overly complex, outdated, and difficult for parents and teachers to navigate. Important information such as announcements, student progress, schedules, and learning updates often becomes hard to access.
           </p>
@@ -129,9 +129,9 @@ export default function MarpasMontessoriCaseStudy() {
       {/* Objectives */}
       <section className="py-40 px-6 md:px-20">
         <div className="max-w-7xl mx-auto">
-          <TextReveal className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
+          <div className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
             Business Goals
-          </TextReveal>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             {[
               {
@@ -163,9 +163,9 @@ export default function MarpasMontessoriCaseStudy() {
       {/* Research */}
       <section className="py-40 px-6 md:px-20">
         <div className="max-w-7xl mx-auto">
-          <TextReveal className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
+          <div className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
             Research
-          </TextReveal>
+          </div>
           <div className="space-y-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
               <div>
@@ -197,11 +197,11 @@ export default function MarpasMontessoriCaseStudy() {
       </section>
 
       {/* User Personas */}
-      <section className="py-40 px-6 md:px-20 bg-black/5 dark:bg-white/5">
+      <section className="py-40 px-6 md:px-20 bg-black dark:bg-black">
         <div className="max-w-7xl mx-auto">
-          <TextReveal className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
+          <div className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
             User Personas
-          </TextReveal>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               {
@@ -253,9 +253,9 @@ export default function MarpasMontessoriCaseStudy() {
       {/* Design Process */}
       <section className="py-40 px-6 md:px-20">
         <div className="max-w-7xl mx-auto">
-          <TextReveal className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
+          <div className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
             Design Process
-          </TextReveal>
+          </div>
           <div className="space-y-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
               <div>
@@ -291,11 +291,11 @@ export default function MarpasMontessoriCaseStudy() {
       </section>
 
       {/* Testing & Results */}
-      <section className="py-40 px-6 md:px-20 bg-black/5 dark:bg-white/5">
+      <section className="py-40 px-6 md:px-20 bg-black dark:bg-black">
         <div className="max-w-7xl mx-auto">
-          <TextReveal className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
+          <div className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
             Testing & Iterations
-          </TextReveal>
+          </div>
           <div className="space-y-12">
             {[
               {
@@ -348,9 +348,9 @@ export default function MarpasMontessoriCaseStudy() {
       {/* Results */}
       <section className="py-40 px-6 md:px-20">
         <div className="max-w-7xl mx-auto">
-          <TextReveal className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
+          <div className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
             Final Outcomes
-          </TextReveal>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
             {[
               { metric: "93%", label: "Parent Satisfaction Rate" },
@@ -386,11 +386,11 @@ export default function MarpasMontessoriCaseStudy() {
       </section>
 
       {/* Future Vision */}
-      <section className="py-40 px-6 md:px-20 bg-black dark:bg-neutral-900 text-white">
+      <section className="py-40 px-6 md:px-20 bg-black dark:bg-black text-white">
         <div className="max-w-7xl mx-auto">
-          <TextReveal className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
+          <div className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
             Future Vision
-          </TextReveal>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               {
@@ -422,9 +422,9 @@ export default function MarpasMontessoriCaseStudy() {
       {/* Reflection */}
       <section className="py-40 px-6 md:px-20">
         <div className="max-w-7xl mx-auto">
-          <TextReveal className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
+          <div className="text-5xl md:text-8xl font-display font-black uppercase mb-16">
             Final Reflection
-          </TextReveal>
+          </div>
           <div className="max-w-3xl">
             <p className="text-2xl md:text-3xl font-sans leading-relaxed mb-8">
               Designing Marpa's Montessori focused on creating a meaningful educational experience that strengthens the connection between schools, teachers, parents, and students.
