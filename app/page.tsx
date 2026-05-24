@@ -184,9 +184,9 @@ const Experience = () => {
 
 const Projects = () => {
   const projects = [
-    { id: "01", title: "NAMZOED", tags: "Full-Stack • Super App", desc: "Bhutan&apos;s first multi-service ecosystem. Led 5+ devs, built with Next.js & Node.js.", caseStudyLink: "/case-studies/namzoed", figmaLink: "https://www.figma.com/design/SAjwoQsVgSvM9ymWjgLY0R/NamZoed-App?node-id=364-2899&t=RyulZE2CFgoDT70f-0" },
-    { id: "02", title: "MARPA&apos;S", tags: "Mobile • Education", desc: "App for kids & differently-abled users. Improved usability by 40%.", caseStudyLink: "/case-studies/marpas", figmaLink: "https://www.figma.com/design/6kzaijdHYkbFbF2J0YYjqa/Marpa-s-Montessori?node-id=13-12&p=f&t=9SGE4VJhhBaiztl4-0" },
-    { id: "03", title: "TIMELESS", tags: "Web • Tourism", desc: "Tourism platform connecting travelers/agents. Integrated booking APIs.", caseStudyLink: "/case-studies/timeless", figmaLink: "https://www.figma.com/design/fNMjDKGC2PSgrpK7rR3uCX/TBT-Website?node-id=0-1&p=f&t=J56Dj5QlcV8ckL2V-0" },
+    { id: "01", title: "NAMZOED", tags: "Full-Stack • Super App", desc: "Bhutan&apos;s first multi-service ecosystem. Led 5+ devs, built with Next.js & Node.js.", caseStudyLink: "/case-studies/namzoed", figmaLink: "https://www.figma.com/design/L7EclYdukkiDVvPPhqJL3l/image?node-id=2202-2&p=f&t=aZLbaiyIp8ew6xZ6-0" },
+    { id: "02", title: "MARPA'S", tags: "Mobile • Education", desc: "App for kids & differently-abled users. Improved usability by 40%.", caseStudyLink: "/case-studies/marpas", figmaLink: "https://www.figma.com/design/6kzaijdHYkbFbF2J0YYjqa/Marpa-s-Montessori?node-id=13-12&p=f&t=9SGE4VJhhBaiztl4-0" },
+    { id: "03", title: "TIMELESS", tags: "Web • Tourism", desc: "Tourism platform connecting travelers/agents. Integrated booking APIs.", caseStudyLink: "/case-studies/timeless", figmaLink: "https://www.figma.com/design/L7EclYdukkiDVvPPhqJL3l/image?node-id=2202-3&p=f&t=aZLbaiyIp8ew6xZ6-0" },
   ]
 
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
